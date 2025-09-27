@@ -1,0 +1,72 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #C0C9EE;
+
+;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+  padding: 0rem;
+  background: #898AC4;  
+  justify-content: space-between; 
+  align-items: center;
+}
+
+nav button {
+  color: #FFFFFF;
+  background: None;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+main {
+  padding: 2rem;
+}
+
+.page1 {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.page1.active {
+  display: block;
+  opacity: 1;
+}
+.button1.active {
+  text-decoration: underline;
+}
+.page2 {
+  width: 70%;       /* chiều rộng khung */
+  height: 70vh;      /* chiều cao khung */
+  background: #e5eaff;/* màu nền nhạt giống hình */
+  border-radius: 10px;
+  padding: 1rem;
+  margin-left:27.5%;
+  margin-right:2.5%;
+  display: none;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+.page2.active {
+  display: block;
+  opacity: 1;
+}
+.button2 {
+  color: #898AC4;
+  background: #e5eaff;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+  height: 4rem;
+  border-radius: 15px;
+}
+.button2.active {
+  color: #e5eaff;
+  background: #898AC4;
+}

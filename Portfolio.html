@@ -1,0 +1,57 @@
+<Portfolio html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="stylep.css">
+</head>
+<body>
+  <nav>
+    <div>
+      <p>Logo</p>
+    </div>
+    <div>
+      <button onclick="showPage('Home')" class="button1 active" id="Home1">Trang chủ</button>
+      <button onclick="showPage('Survey')" class="button1" id="Survey1">Khảo Sát</button>
+      <button onclick="showPage('AboutUs')" class="button1" id="AboutUs1">Về Chúng Tôi</button>
+    </div>
+  </nav>
+
+  <main>
+    <section id="Home" class="page1 active" style="display:flex; justify-content: space-between;">  
+      <div style="display:flex; flex-direction: column; width: 20%; height: 70vh; position: absolute; justify-content: space-between; padding:0.5rem;"> 
+        <button onclick="showPage2('Video')" class="button2 active" id="Video1">Video phỏng vấn</button>
+        <button onclick="showPage2('KhaiNiem')" class="button2" id="KhaiNiem1">Khái Niệm Kỹ Năng Tư Duy Phản Biện</button>
+        <button onclick="showPage2('BieuHien')" class="button2" id="BieuHien1">Biểu Hiện Kỹ Năng Tư Duy Phản Biện</button>
+        <button onclick="showPage2('GiaiPhap')" class="button2" id="GiaiPhap1">Giải Pháp</button>
+        <button onclick="showPage2('SanPham')" class="button2" id="SanPham1">Sản Phẩm Sáng Tạo</button>
+      </div>
+
+
+      <div id="Video" class="page2 active">
+      </div>
+
+      <div id="KhaiNiem" class="page2">
+      </div>
+      <div id="BieuHien" class="page2">
+      </div>
+      <div id="GiaiPhap" class="page2">
+      </div>  
+      <div id="SanPham" class="page2">
+      </div>
+    </section>
+
+    <section id="Survey" class="page1">
+      <p>Chưa có gì hết</p>
+    </section>
+
+    <section id="AboutUs" class="page1">
+      <p>Cũng chưa có gì hết</p>
+
+    </section>
+
+  </main>
+
+  <script src="script2.js"></script>
+</body>
+</html>
