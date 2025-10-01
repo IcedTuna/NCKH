@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Nghiên Cứu Khoa Học</title>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="stylep.css">
 </head>
 <body>
   <nav>
     <div>
-      <p>Logo</p>
+      <button style="display: flex; align-items: center; justify-content: center; gap:0.5rem; font-size: 1.1rem;">
+        <img src="Logo.png" alt="Logo" style="height:10vh;">
+        D.A.R.E
+      </button>
     </div>
     <div>
       <button onclick="showPage('Home')" class="button1 active" id="Home1">Trang chủ</button>
@@ -18,8 +21,8 @@
   </nav>
 
   <main>
-    <section id="Home" class="page1 active" style="display:flex; justify-content: space-between;">  
-      <div style="display:flex; flex-direction: column; width: 20%; height: 70vh; position: absolute; justify-content: space-between; padding:0.5rem;"> 
+    <section id="Home" class="page1 active" style="display:flex; justify-content: space-between;z-index: 5; position: relative;">  
+      <div style="display:flex; flex-direction: column; width: 25%; height: 70vh; position: absolute; justify-content: space-between; padding:0.5rem; z-index: 5;"> 
         <button onclick="showPage2('Video')" class="button2 active" id="Video1">Video phỏng vấn</button>
         <button onclick="showPage2('KhaiNiem')" class="button2" id="KhaiNiem1">Khái Niệm Kỹ Năng Tư Duy Phản Biện</button>
         <button onclick="showPage2('BieuHien')" class="button2" id="BieuHien1">Biểu Hiện Kỹ Năng Tư Duy Phản Biện</button>
@@ -38,12 +41,20 @@
       <div id="GiaiPhap" class="page2">
       </div>  
       <div id="SanPham" class="page2">
+        <div style="display:flex; align-items: center; flex-direction: column; gap:10px; height: 100%; justify-content: space-between;">
+          <img id="flipImage" style="width:400px; transition: opacity 0.5s ease;" />
+          <div id="dots"></div>
+          <span>
+            <button onclick="prevPage()">p</button>
+            <button onclick="nextPage()">a</button>
+          </span>
+        </div>
       </div>
     </section>
 
     <section id="Survey" class="page1">
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdogBHQhyx-oH0G8Feo8ZcO9QeJXZEUvM3cBPJhEBmjwo6QFQ/viewform?embedded=true" 
-        style="width:100%; height:80vh; border: None">
+              style="width:100%; height:80vh; border: None">
       Đang tải…
       </iframe>
     </section>
@@ -58,4 +69,3 @@
   <script src="script2.js"></script>
 </body>
 </html>
-
