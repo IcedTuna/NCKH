@@ -1,5 +1,9 @@
+
+@font-face {
+    font-family: 'Bungee Regular';
+    src: url('Bungee-Regular.ttf') format('truetype');
+}
 body {
-  font-family: sans-serif;
   margin: 0;
   padding: 0;
   background: #C0C9EE;
@@ -14,9 +18,12 @@ nav {
   background: #898AC4;  
   justify-content: space-between; 
   align-items: center;
+  position: relative; /* Tạo stacking context */
+  z-index: 100;
 }
 
 nav button {
+  font-family: 'Bungee Regular';
   color: #FFFFFF;
   background: None;
   border: none;
@@ -38,35 +45,54 @@ main {
   display: block;
   opacity: 1;
 }
+.button1 {
+  font-family: 'Bungee Regular';
+  font-size: 1.1rem;
+}
 .button1.active {
   text-decoration: underline;
 }
 .page2 {
-  width: 70%;       /* chiều rộng khung */
+  width: 60%;       /* chiều rộng khung */
   height: 70vh;      /* chiều cao khung */
   background: #e5eaff;/* màu nền nhạt giống hình */
   border-radius: 10px;
   padding: 1rem;
-  margin-left:27.5%;
-  margin-right:2.5%;
+  margin-left: 35%;
+  margin-right:5%;
   display: none;
   opacity: 0;
-  transition: opacity 1.5s ease;
+  transition: opacity 0.4s ease;
+  position: relative;
 }
 .page2.active {
-  display: block;
+  display: flex;
   opacity: 1;
 }
 .button2 {
+  font-family: 'Bungee Regular';
   color: #898AC4;
   background: #e5eaff;
   border: none;
   padding: 0.5rem 0.5rem;
   cursor: pointer;
-  height: 4rem;
+  height: 4.25rem;
   border-radius: 15px;
 }
 .button2.active {
   color: #e5eaff;
   background: #898AC4;
+}
+#SanPham { 
+    justify-content: center; /* Canh giữa #sanpham theo chiều ngang */
+    align-items: center;    /* Canh giữa #sanpham theo chiều dọc */
+    flex-direction: column;
+}
+
+#flipImage {
+    margin:auto;
+    max-width: 100%; 
+    max-height: 100%;
+    object-fit:contain; 
+    height: 75vh;
 }
