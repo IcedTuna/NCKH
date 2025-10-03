@@ -57,7 +57,7 @@ main {
   height: 70vh;      /* chiều cao khung */
   background: #e5eaff;/* màu nền nhạt giống hình */
   border-radius: 10px;
-  padding: 1rem;
+  padding: 0.5rem 1.5rem;
   margin-left: 35%;
   margin-right:5%;
   display: none;
@@ -68,6 +68,8 @@ main {
 .page2.active {
   display: flex;
   opacity: 1;
+  font-size: 1.25rem;
+  overflow-y: auto;
 }
 .button2 {
   font-family: 'Bungee Regular';
@@ -76,7 +78,7 @@ main {
   border: none;
   padding: 0.5rem 0.5rem;
   cursor: pointer;
-  height: 4.25rem;
+  height: 3.5rem;
   border-radius: 15px;
 }
 .button2.active {
@@ -96,4 +98,3 @@ main {
     object-fit:contain; 
     height: 75vh;
 }
-
