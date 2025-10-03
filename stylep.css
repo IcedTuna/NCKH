@@ -78,7 +78,7 @@ main {
   border: none;
   padding: 0.5rem 0.5rem;
   cursor: pointer;
-  height: 3.5rem;
+  height: 3rem;
   border-radius: 15px;
 }
 .button2.active {
@@ -98,3 +98,4 @@ main {
     object-fit:contain; 
     height: 75vh;
 }
+
