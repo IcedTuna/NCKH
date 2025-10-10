@@ -15,7 +15,7 @@ function showPage(id) {
   setTimeout(() => {
     current.style.display = 'none';
 
-    next.style.display = 'block';
+    next.style.display = 'flex';
     setTimeout(() => {
       next.classList.add('active');
     }, 10); // Chờ một chút để trigger transition
@@ -100,3 +100,40 @@ function prevPage() {
 
 // Hiển thị ảnh đầu tiên
 showImage();
+
+function show(btn) {
+  if (btn.id === "menub1") {
+    document.getElementById("menu").style.display = "flex";
+    btn.style.opacity = "0%";
+    document.getElementById("menub2").style.opacity = "100%";
+  }
+  else {
+    document.getElementById("menu").style.display = "none";
+    btn.style.opacity = "0%";
+    document.getElementById("menub1").style.opacity = "100%";
+  }
+}
+
+function showPage3(id) {
+  const pages = document.querySelectorAll('.page1');
+  const current = document.querySelector('.page1.active');
+  const next = document.getElementById(id);
+  const nextb = document.getElementById(id +"1");
+  const buttons = document.querySelectorAll('.button3');
+  const currentb = document.querySelector('.button3.active');
+  if (current === next) return; // Không làm gì nếu bấm lại cùng mục
+
+  // Bắt đầu ẩn phần hiện tại
+  current.classList.remove('active');
+  currentb.classList.remove('active');
+  nextb.classList.add('active');
+  // Sau khi ẩn xong (đợi fade-out), mới hiện phần mới
+  setTimeout(() => {
+    current.style.display = 'none';
+
+    next.style.display = 'flex';
+    setTimeout(() => {
+      next.classList.add('active');
+    }, 10); // Chờ một chút để trigger transition
+  }, 400); // = thời gian fade-out trong CSS
+}
