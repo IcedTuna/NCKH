@@ -1,8 +1,15 @@
 <Portfolio html>
 <html lang="en">
 <head>
+  <script>
+    if (window.matchMedia("(orientation: portrait)").matches || window.innerWidth < 768) {
+      location.replace("mobile.html");
+    } else {
+      location.replace("Portfolio.html");
+    }
+  </script>
   <meta charset="UTF-8">
-  <title>My Portfolio</title>
+  <title>NCKH</title>
   <link rel="stylesheet" href="stylep.css">
 </head>
 <body>
@@ -16,7 +23,6 @@
     <div>
       <button onclick="showPage('Home')" class="button1 active" id="Home1">Trang chủ</button>
       <button onclick="showPage('Survey')" class="button1" id="Survey1">Khảo Sát</button>
-      <button onclick="showPage('AboutUs')" class="button1" id="AboutUs1">Về Chúng Tôi</button>
     </div>
   </nav>
 
@@ -26,13 +32,17 @@
         <button onclick="showPage2('Video')" class="button2 active" id="Video1">Video phỏng vấn</button>
         <button onclick="showPage2('KhaiNiem')" class="button2" id="KhaiNiem1">Khái Niệm Kỹ Năng Tư Duy Phản Biện</button>
         <button onclick="showPage2('BieuHien')" class="button2" id="BieuHien1">Biểu Hiện Kỹ Năng Tư Duy Phản Biện</button>
-        <button onclick="showPage2('GiaiPhap')" class="button2" id="GiaiPhap1">Giải Pháp</button>
-        <button onclick="showPage2('SanPham')" class="button2" id="SanPham1">Sản Phẩm Sáng Tạo</button>
         <button onclick="showPage2('VaiTro')" class="button2" id="VaiTro1">Vai Trò Của Tư Duy Phản Biện</button>
+        <button onclick="showPage2('GiaiPhap')" class="button2" id="GiaiPhap1">Giải Pháp</button>
+        
       </div>
 
 
       <div id="Video" class="page2 active">
+        <iframe src="https://drive.google.com/file/d/1FpAi2emzn_uAS9OniEt7HOCzeGyU8hL2/preview" 
+                width="100%" height= "auto" allow="autoplay">
+        </iframe>
+
       </div>
 
       <div id="KhaiNiem" class="page2">
@@ -101,20 +111,6 @@ Nhiều tác giả, nhà nghiên cứu đưa ra định nghĩa tư duy như sau:
 <br>-   	Kết nối với các tổ chức, các doanh nghiệp, khuyến khích học sinh tham gia các sân chơi, chương trình khởi nghiệp, tạo cơ hội cho học sinh bày tỏ chính kiến, ý tưởng sáng tạo giúp việc học tập, nghiên cứu và rèn luyện kỹ năng tư duy  phản biện cho bản thân được tốt hơn.
         </p>
       </div>  
-      <div id="SanPham" class="page2">
-        <div style="display:flex; align-items: center; flex-direction: column; gap:10px; height: 100%; justify-content: space-between;">
-          <img id="flipImage" style="width:400px; transition: opacity 0.5s ease;" />
-          <div id="dots"></div>
-          <span>
-            <button onclick="prevPage()" style="border:none; background:none; cursor:pointer;">
-              <img src="arrow.png" style="height:1.5rem; transform: rotate(180deg);">
-            </button>
-            <button onclick="nextPage()" style="border:none; background:none; cursor:pointer;">
-              <img src="arrow.png" style="height:1.5rem;">
-            </button>
-          </span>
-        </div>
-      </div>
       <div id="VaiTro" class="page2">
         <p><strong>2.2.Vai trò của kỹ năng tư duy phản biện</strong>
 <br>-     Hạn chế tư duy lệ thuộc và thụ động: Giúp học sinh không dễ bị dẫn dắt, tránh tin theo thông tin sai lệch, tin giả, đặc biệt trong thời đại mạng xã hội phát triển.
@@ -129,6 +125,19 @@ Nhiều tác giả, nhà nghiên cứu đưa ra định nghĩa tư duy như sau:
 <br>- 	Khi đã có thói quen phản biện và tự phân tích, học sinh dễ dàng tiếp tục học tập, nghiên cứu và phát triển kỹ năng sau khi rời ghế nhà trường.
         </p>
       </div>  
+      <div style="display:flex; align-items: center; flex-direction: column; gap:10px; height: 70vh; justify-content: space-between;">
+        <p style="font-family: 'Bungee Regular'; color: #3c4678;">Sản Phẩm Sáng Tạo</p>
+        <img id="flipImage" style="width:400px; transition: opacity 0.5s ease;" />
+        <div id="dots"></div>
+        <span>
+          <button onclick="prevPage()" style="border:none; background:none; cursor:pointer;">
+            <img src="arrow.png" style="height:1.5rem; transform: rotate(180deg);">
+          </button>
+          <button onclick="nextPage()" style="border:none; background:none; cursor:pointer;">
+            <img src="arrow.png" style="height:1.5rem;">
+          </button>
+        </span>
+      </div>
     </section>
 
     <section id="Survey" class="page1">
@@ -136,11 +145,6 @@ Nhiều tác giả, nhà nghiên cứu đưa ra định nghĩa tư duy như sau:
               style="width:100%; height:80vh; border: None">
       Đang tải…
       </iframe>
-    </section>
-
-    <section id="AboutUs" class="page1">
-      <p>Cũng chưa có gì hết</p>
-
     </section>
 
   </main>
