@@ -42,7 +42,7 @@ main {
 }
 
 .page1.active {
-  display: block;
+  display: flex;
   opacity: 1;
 }
 .button1 {
@@ -58,12 +58,13 @@ main {
   background: #e5eaff;/* màu nền nhạt giống hình */
   border-radius: 10px;
   padding: 0.5rem 1.5rem;
-  margin-left: 35%;
+  margin-left: 30%;
   margin-right:5%;
   display: none;
   opacity: 0;
   transition: opacity 0.4s ease;
   position: relative;
+  box-shadow: 10px 10px 0px rgb(108, 108, 108);
 }
 .page2.active {
   display: flex;
@@ -78,7 +79,7 @@ main {
   border: none;
   padding: 0.5rem 0.5rem;
   cursor: pointer;
-  height: 3rem;
+  height: 3.5rem;
   border-radius: 15px;
 }
 .button2.active {
@@ -99,3 +100,37 @@ main {
     height: 75vh;
 }
 
+
+.menub {
+  width:2rem; 
+  height:2rem; 
+  color:white; 
+  background-color: #3c4678; 
+  border: None; 
+  border-radius: 5px; 
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+#menu {
+  position: fixed; 
+  display: none;
+  gap:10px;
+  left: 0; 
+  flex-direction: column;
+  background-color: #3c4678;
+  padding : 0.5rem;
+  width: 8rem;
+  top: 0;
+  z-index: 1;
+}
+.button3 {
+  font-family: 'Bungee Regular';
+  font-size: 1.1rem;
+  background:None;
+  border: None;
+  color:#8b93ed;
+  cursor: pointer;
+}
+.button3.active {
+  text-decoration: underline;
+}
