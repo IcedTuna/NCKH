@@ -41,7 +41,7 @@ main {
 .page2.active {
   display: flex;
   opacity: 1;
-  font-size: 0.75rem;
+  font-size: 1rem;
   overflow-y: auto;
 }
 .page2::-webkit-scrollbar {
@@ -67,7 +67,7 @@ main {
   cursor: pointer;
   height: 3rem;
   border-radius: 15px;
-  font-size: 0.7rem;
+  font-size: 11rem;
 }
 .button2.active {
   color: #e5eaff;
@@ -84,13 +84,13 @@ main {
 
 
 .menub {
-  width:2rem; 
-  height:2rem; 
+  width:5rem; 
+  height:5rem; 
   color:white; 
   background-color: #3c4678; 
   border: None; 
   border-radius: 5px; 
-  font-size: 1.5rem;
+  font-size: 3rem;
   cursor: pointer;
 }
 #menu {
@@ -108,7 +108,7 @@ main {
 }
 .button3 {
   font-family: 'Bungee Regular';
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   background:None;
   border: None;
   color:#8b93ed;
@@ -116,4 +116,5 @@ main {
 }
 .button3.active {
   text-decoration: underline;
+
 }
