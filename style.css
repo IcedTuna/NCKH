@@ -41,7 +41,7 @@ main {
 .page2.active {
   display: flex;
   opacity: 1;
-  font-size: 1rem;
+  font-size: 1.25rem;
   overflow-y: auto;
 }
 .page2::-webkit-scrollbar {
@@ -67,7 +67,7 @@ main {
   cursor: pointer;
   height: 3rem;
   border-radius: 15px;
-  font-size: 11rem;
+  font-size: 1.25rem;
 }
 .button2.active {
   color: #e5eaff;
@@ -101,14 +101,14 @@ main {
   flex-direction: column;
   background-color: #3c4678;
   padding : 0rem;
-  width: 7rem;
+  width: 10rem;
   top: 0;
   z-index: 50;
   height: 100%
 }
 .button3 {
   font-family: 'Bungee Regular';
-  font-size: 1.2rem;
+  font-size: 1.55rem;
   background:None;
   border: None;
   color:#8b93ed;
@@ -116,5 +116,5 @@ main {
 }
 .button3.active {
   text-decoration: underline;
-
 }
+
