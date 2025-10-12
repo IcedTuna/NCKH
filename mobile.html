@@ -1,0 +1,147 @@
+<Portfolio html>
+<html lang="en">
+<head>
+  <script>
+    if (window.matchMedia("(orientation: portrait)").matches || window.innerWidth < 768) {
+      location.replace("mobile.html");
+    } else {
+      location.replace("Portfolio.html");
+    }
+  </script>
+  <meta charset="UTF-8">
+  <title>NCKH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="menub1" style="z-index: 10; opacity:100%; position: fixed;" onclick="show(this)" class = "menub"><strong>≣</strong></button>
+    <div id="menu">
+      <button id="menub2" style="margin-left: 5rem; opacity:0%" onclick="show(this)" class = "menub"><strong>≣</strong></button>
+      <button onclick="showPage3('Home')" class="button3 active" id="Home1">Trang chủ</button>
+      <div style="padding-left: 1rem;">
+        <button onclick="showPage2('Video')" class="button2 active" id="Video1">Video</button>
+        <button onclick="showPage2('KhaiNiem')" class="button2" id="KhaiNiem1">Khái niệm</button>
+        <button onclick="showPage2('BieuHien')" class="button2" id="BieuHien1">Biểu hiện</button>
+        <button onclick="showPage2('GiaiPhap')" class="button2" id="GiaiPhap1">Giải pháp</button>
+        <button onclick="showPage2('VaiTro')" class="button2" id="VaiTro1">Vai trò</button>
+      </div>
+      <button onclick="showPage3('Survey')" class="button3" id="Survey1">Khảo Sát</button>
+    </div>
+
+
+  <main>
+    <section id="Home" class="page1 active" style="display:flex; justify-content: space-between; z-index: 5; position: relative; flex-direction: column; gap:10px">  
+
+      <div style="display:flex; align-items: center; flex-direction: column; height: 45vh; justify-content: space-between;">
+        <p style="font-family: 'Bungee Regular'; color: #3c4678;">Sản Phẩm Sáng Tạo</p>
+        <img id="flipImage" style="width:400px; transition: opacity 0.5s ease;" />
+        <div id="dots"></div>
+        <span>
+          <button onclick="prevPage()" style="border:none; background:none; cursor:pointer;">
+            <img src="arrow.png" style="height:1.5rem; transform: rotate(180deg);">
+          </button>
+          <button onclick="nextPage()" style="border:none; background:none; cursor:pointer;">
+            <img src="arrow.png" style="height:1.5rem;">
+          </button>
+        </span>
+      </div>
+
+      <div id="Video" class="page2 active">
+        <iframe src="https://drive.google.com/file/d/1FpAi2emzn_uAS9OniEt7HOCzeGyU8hL2/preview" 
+                width="100%" height= "auto" allow="autoplay">
+        </iframe>
+      </div>
+
+      <div id="KhaiNiem" class="page2">
+        <p><strong>1.2.Khái niệm kỹ năng tư duy phản biện</strong><br>
+<strong>1.2.1.   Khái niệm về tư duy</strong><br>
+Nhiều tác giả, nhà nghiên cứu đưa ra định nghĩa tư duy như sau:<br>
+<br>-       Tác giả Phạm Minh Hạc có nêu: “Tư duy là quá trình nhận thức, phản ánh những thuộc tính bản chất, những mối quan hệ có tính quy luật của sự vật và hiện tượng trong hiện thực khách quan mà ta chưa biết” (Phạm Minh Hạc, Tâm lí học, NXB Giáo Dục, trang 117, 1997)
+<br>-       Trong từ điển Tiếng Việt, tư duy được định nghĩa như sau: “Tư duy là giai đoạn cao của quá trình nhận thức, đi sâu vào bản chất và phát hiện ra tính quy luật của sự vật bằng những hình thức như biểu tượng, khái niệm, phán đoán và suy lí” (Hoàng Phê, Từ điển Tiếng Việt, Trung tâm Từ điển ngôn ngữ Hà Nội, trang 1051, 1992)
+<br>Thông qua các định nghĩa trên, có thể kết luận: Tư duy là quá trình nhận thức, phản ánh những thuộc tính bản chất, những mối liên hệ có tính quy luật của sự vật, hiện tượng trong hiện thực khách quan. Nhờ có tư duy, con người mới biết khám phá, phát hiện ra những cái mới, sáng tạo và học hỏi để tạo ra những tri thức mới.
+<br><strong>1.2.2.   Khái niệm về tư duy phản biện</strong>
+<br>Theo John Dewey, ông cho rằng: “Tư duy phản biện là sự suy xét chủ động, kiên trì và liên tục, cẩn trọng về một niềm tin hay một giả định khoa học, có xem xét dưới góc độ của những lí lẽ bảo vệ nó và những kết luận xa hơn mà nó hướng tới” (John Dewey, Cách ta nghĩ, NXB Tri Thức, trang 74, 2015)
+<br>Theo tác giả Lê Thanh Sơn và Đoàn Đức Lương: “Tư duy phản biện là một quá trình tư duy biện chứng gồm phân tích và đánh giá một thông tin đã có theo các cách nhìn khác nhau cho vấn đề đã đặt ra nhằm làm sáng tỏ và khẳng định lại tính đúng đắn của vấn đề. Lập luận phản biện phải rõ ràng, logic, đầy đủ bằng chứng, tỉ mỉ và công tâm.” (Lê Thanh Sơn và Đoàn Đức Lương, Giáo trình Kỹ năng Tư duy phản biện, NXB Đại học Huế, trang 14, 19, 2018)
+<br> Qua các định nghĩa trên, sau khi kế thừa và phát triển, tư duy phản biện có thể được hiểu là một quá trình suy xét, phân tích và đánh giá một thông tin đã có theo hướng chủ động, lập luận phản biện rõ ràng, logic, khách quan và công tâm, nhằm hình thành những phán đoán dựa trên những cơ sở nhất định.
+<br><strong>1.3.Khái niệm về kỹ năng tư duy phản biện</strong>
+<br>Theo Diane F. Hapern: “Kỹ năng tư duy phản biện là khả năng phân tích, tổng hợp và đánh giá thông tin, cũng như khuynh hướng sẵn sàng vận dụng những khả năng này.” (Diane F. Hapern, Critical Thinking Workshop for Helping our Students Becom Better, trang 6, 2001)
+<br>Theo các tác giả Nguyễn Thị Bích Ngọc, Phan Thị Thanh Hội cho rằng: “Kỹ năng tư duy phản biện là một chuỗi các hoạt động được cá nhân thực hiện thuần thục nhằm phân tích thông tin, thu thập minh chứng, đưa ra lập luận nhằm chứng minh hoặc bác bỏ một vấn đề, ý kiến, quan điểm.” (Nguyễn Thị Bích Ngọc và Phan Thị Thanh Hội, Rèn luyện kĩ năng tư duy phản biện cho học sinh trong dạy học chương “Chuyển hóa vật chất và năng lượng” Sinh học 11, Tạp chí Giáo dục số 478, trang 35, năm 2020)
+<br>Thông qua khái niệm “kỹ năng”, khái niệm “tư duy phản biện” và kế thừa các quan điểm trên, kỹ năng tư duy phản biện có thể được hiểu là khả năng phân tích, đánh giá, lập luận, vận dụng những thông tin dựa trên tư duy khách quan nhằm rút ra kết luận, quyết định, để chứng minh, ủng hộ hay bác bỏ một vấn đề, ý kiến, quan điểm nào đó.
+        </p>
+      </div>
+      <div id="BieuHien" class="page2">
+        <p><strong>1.1.Những biểu hiện của kỹ năng tư duy phản biện</strong><br>
+- 	Biết đặt câu hỏi, không tiếp nhận thông tin một cách thụ động. Luôn thắc mắc, tìm hiểu sâu vấn đề thay vì chỉ chấp nhận những gì được nghe hoặc đọc.<br>
+- 	Có chính kiến riêng, tư duy độc lập, không chạy theo đám đông. Dám bảo vệ ý kiến cá nhân dù khác số đông, không bị ảnh hưởng bởi áp lực xã hội.<br>
+- 	Phân tích và đánh giá thông tin từ nhiều nguồn khác nhau. Biết kiểm tra độ tin cậy, so sánh và đối chiếu các thông tin trước khi đưa ra kết luận.<br>
+- 	Sử dụng lý lẽ và dẫn chứng rõ ràng để bảo vệ quan điểm không nói theo cảm tính mà dựa trên lập luận logic, dẫn chứng cụ thể.<br>
+-     Lắng nghe ý kiến trái chiều và biết phân tích đánh giá ý kiến đó. Không bác bỏ quan điểm khác một cách cực đoan, mà biết phản biện văn minh, có cơ sở.<br>
+- 	Linh hoạt trong tư duy, .biết nhìn nhận vấn đề từ nhiều góc độ khác nhau, cân nhắc lợi ích và hạn chế.sẵn sàng thay đổi quan điểm khi có bằng chứng thuyết phục<br>
+- 	Có khả năng hệ thống hoá, sắp xếp thông tin theo trật tự hợp lý và rút ra kết luận rõ ràng.<br>
+- 	Biết nhìn lại cách suy nghĩ, quan điểm của bản thân, phát hiện điểm còn hạn chế để cải thiện.<br>
+        </p>
+      </div>
+      <div id="GiaiPhap" class="page2">
+        <p><strong>1.   Một số giải pháp giúp cải thiện kỹ năng tư duy phản biện cho học sinh trường THPT Phú Nhuận</strong>
+<br><strong>1.1.Đối với bản thân học sinh</strong>
+<br>-       Học sinh cần biết lắng nghe và phân tích ý kiến trái chiều một cách khách quan, rèn luyện khả năng đặt bản thân vào vị trí của người khác nhằm hiểu được cách nhìn nhận vấn đề từ nhiều góc độ khác nhau, khuyến khích thảo luận mang tính xây dựng.
+<br>-       Học sinh tự rèn thói quen đặt nhiều câu hỏi về các thông tin và vấn đề mình tiếp nhận. Luyện tập phân tích thông tin khách quan: so sánh các nguồn khác nhau, đánh giá dựa trên lập luận và bằng chứng.
+<br>-       Thảo luận và trao đổi ý kiến cùng bạn bè hoặc nhóm học tập. Việc lắng nghe tích cực và tranh luận xây dựng giúp em hiểu vấn đề từ nhiều góc độ, mở rộng tầm nhìn và cải thiện khả năng phân tích.
+<br>-       Theo dõi các kênh tranh biện, podcast về tư duy phản biện hay TikTok học thuật (Trường Teen,The Debate Podcast, sách nói).
+<br>-       Thực hành “đảo ngược quan điểm”: Khi đứng trước một vấn đề hay ý kiến, học sinh nên thử đặt mình vào phe ngược lại để suy nghĩ, giúp rèn kỹ năng đánh giá nhiều góc nhìn và phát hiện điểm yếu trong lập luận của chính mình.
+<br>-       Đọc và viết phản biện, đọc các sách báo, trang mạng về các chủ đề để có nền tảng kiến thức để củng cố cho các lập luận, dẫn chứng phản biện.Viết bài luận ngắn hay nhật ký giúp rèn luyện kỹ năng phân tích, đánh giá các vấn đề.
+<br>-       Sử dụng các công cụ AI như ChatGPT, Gemini để tạo đối thoại giả lập, phản biện quan điểm cá nhân và phân tích lập luận trong văn bản. Thông qua việc tương tác với AI, học sinh có thể nâng cao tư duy logic, khả năng nhìn nhận đa chiều và trình bày lập luận một cách thuyết phục.
+<br>-       Học sinh cần làm quen với các phương pháp tư duy phản biện chuyên nghiệp như tư duy đánh giá 5W1H để nhìn nhận vấn đề toàn diện hơn.
+<br>-       Quản lý cảm xúc khi phản biện: Học sinh cần rèn khả năng kiểm soát cảm xúc, tránh tranh luận cực đoan hay cá nhân hóa vấn đề. Điều này giúp phản biện văn minh và thuyết phục hơn.
+<br>-       Tham gia các Câu lạc bộ tranh biện, diễn đàn học thuật trong trường, đây là môi trường thực tế để luyện tập phản biện qua tình huống cụ thể, vừa học vừa trải nghiệm.
+<br>-       Tự đánh giá bản thân (self-reflection): Sau mỗi buổi thảo luận hoặc tranh biện, học sinh nên nhìn lại mình đã làm tốt gì, còn yếu chỗ nào để cải thiện.
+<br>-       Học cách ghi chú tư duy (mindmap, note): Khi học hoặc đọc, học sinh nên ghi lại ý chính, lập bảng so sánh ưu và nhược điểm, hoặc sơ đồ nguyên nhân, kết quả để hệ thống hóa thông tin và phản biện dễ hơn.
+<br>-       Chủ động cắt giảm thói quen tiêu thụ những video ngắn và vô nghĩa như một hình thức giải trí. Đây là một thói quen xấu có thể dẫn đến việc hình thành sự khó tập trung trong thời gian dài và dần mất đi kỹ năng tư duy phản biện của bản thân học sinh trong học tập và làm việc.
+<br><strong>1.2.Đối với nhà trường</strong>
+<br>-   Nhà trường có thể tổ chức các buổi sinh hoạt chuyên đề lồng ghép trong giờ chào cờ đầu tuần, mời các diễn giả, chuyên gia trong lĩnh vực giáo dục, truyền thông hoặc tâm lý học đến chia sẻ về vai trò thiết yếu và các biện pháp cải thiện tư duy phản biện trong học tập và cuộc sống hiện đại.
+<br>-   Các tiết học nên sử dụng video, bài báo, tình huống thực tế hoặc thông tin từ nhiều nguồn hay trong mỗi môn học (Ngữ văn, Lịch sử, Tiếng Anh, Kinh tế pháp luật, ...) có thể tích hợp các bài tập mở, yêu cầu học sinh  tự đặt câu hỏi, lập luận, đánh giá và phản biện thông tin, phát triển lập luận dựa trên bằng chứng khi học các khái niệm mới.
+<br>-   Các Câu lạc bộ tranh biện, Câu lạc bộ Nghiên cứu khoa học, Câu lạc bộ truyền thông ... có thể tổ chức các buổi tranh biện định kỳ, xây dựng hoạt động viết và phản biện bài viết, phân tích thông tin đa chiều trên các nền tảng truyền thông, đồng thời triển khai các dự án học tập có yêu cầu trình bày và bảo vệ quan điểm trước tập thể.
+<br>-   Nhà trường triển khai các khóa học về tư duy  phản biện cho đội ngũ giáo viên,khuyến khích giáo viên thêm các yếu tố rèn luyện tư duy phản biện cho học sinh vào bài giảng.
+<br>-   Tổ chức các cuộc thi, diễn đàn và hội thảo học sinh, kết nối với các trường khác để tổ chức giao lưu tranh biện liên trường, mở rộng phạm vi thực hành như Cuộc thi hùng biện, diễn đàn học sinh với các vấn đề xã hội, tranh biện theo nhóm,…
+<br>-   Ứng dụng công nghệ và nền tảng số, có thể sử dụng các nền tảng như Kahoot, Google Classroom để học sinh phản hồi, thảo luận, đánh giá chéo các sản phẩm học tập.
+<br>-   Xây dựng thư viện số hoặc góc đọc sách chuyên về tư duy phản biện, tranh biện, khoa học logic để học sinh tự tìm tòi.
+<br>-   Tổ chức các tiết học kỹ năng sống giúp nâng cao nhận thức và rèn luyện kỹ năng tư duy phản biện cho học sinh.
+<br><strong>1.3.Đối với gia đình</strong>
+<br>-       Gia đình cần xây dựng thói quen giao tiếp cởi mở, thoải mái. Cha mẹ nên thường xuyên dành thời gian lắng nghe, quan tâm và trao đổi với con về mọi vấn đề, khuyến khích con trình bày quan điểm, nêu ý tưởng của mình mà không lo ngại bị phán xét.
+<br>-       Khuyến khích con đọc sách, xem phim tài liệu, tin tức… từ nhiều nguồn khác nhau, sau đó cùng con thảo luận, đánh giá độ tin cậy của thông tin và nhìn nhận vấn đề từ nhiều chiều.
+<br>-       Tạo điều kiện cho con hoặc cùng con tham gia vào các khóa học, workshop, buổi tọa đàm,... về phát triển kỹ năng tư duy phản biện.
+<br>-        Cha mẹ nên thường xuyên đặt câu hỏi, làm gương cho con trong tư duy phản biện, phân tích thông tin và giải thích lý do cho các quyết định của mình. Khi thấy người lớn suy nghĩ logic và không tin ngay vào mọi thứ, con sẽ học được cách suy nghĩ độc lập và khách quan hơn.
+<br>-       Cha mẹ nên khuyến khích con tự ra quyết định trong một số việc như định hướng nghề nghiệp, chọn cách giải quyết tình huống…, sau đó cùng phân tích ưu, nhược điểm của lựa chọn đó.
+<br><strong>1.4.Đối với xã hội</strong>
+<br>-       Nhà nước cần chủ động xây dựng một môi trường cởi mở, đầu tư, xây dựng các trung tâm Văn hóa, các trụ sở khu phố tại các địa phương, hỗ trợ tổ chức các hoạt động, các câu lạc bộ sinh hoạt tại địa phương, giúp rèn luyện và thực hành kỹ năng tư duy phản biện cho học sinh có cơ hội hòa nhập tốt hơn, tăng sự tự tin và phát triển tốt kỹ năng tư duy phản biện của bản thân.
+<br>-       Tuyên truyền thông qua các phương tiện truyền thông như các trang mạng, đài truyền hình, các nền tảng mạng xã hội về phát triển kỹ năng tư duy phản biện giúp học sinh có thêm kiến thức để học tập và rèn luyện thêm về kỹ năng tư duy  phản biện.
+<br>-   	Kết nối với các tổ chức, các doanh nghiệp, khuyến khích học sinh tham gia các sân chơi, chương trình khởi nghiệp, tạo cơ hội cho học sinh bày tỏ chính kiến, ý tưởng sáng tạo giúp việc học tập, nghiên cứu và rèn luyện kỹ năng tư duy  phản biện cho bản thân được tốt hơn.
+        </p>
+      </div>  
+      <div id="VaiTro" class="page2">
+        <p><strong>2.2.Vai trò của kỹ năng tư duy phản biện</strong>
+<br>-     Hạn chế tư duy lệ thuộc và thụ động: Giúp học sinh không dễ bị dẫn dắt, tránh tin theo thông tin sai lệch, tin giả, đặc biệt trong thời đại mạng xã hội phát triển.
+<br>-     Rèn cho học sinh thói quen suy nghĩ có trách nhiệm, tôn trọng ý kiến khác biệt và phản biện một cách văn minh
+<br>-     Phát triển tư duy độc lập: Học sinh không còn phụ thuộc hoàn toàn vào giáo viên mà biết tự suy nghĩ, phân tích và đưa ra quyết định của riêng mình.
+<br>- 	Tăng khả năng, tư duy sáng tạo khi gặp một vấn đề nào đó.
+<br>-     Nâng cao khả năng giải quyết vấn đề: Các em biết cách xác định vấn đề, thu thập và đánh giá thông tin, từ đó tìm ra giải pháp phù hợp và hiệu quả.
+<br>- 	Chủ động trong học tập: Học sinh biết đặt câu hỏi, tìm kiếm kiến thức, thảo luận và phản biện thay vì chỉ tiếp thu thụ động.
+<br>- 	Tăng hứng thú và hiệu quả học tập: Việc tham gia chủ động giúp tiết học trở nên sôi nổi, hấp dẫn và khơi dậy sự tò mò, sáng tạo trong mỗi học sinh.
+<br>- 	Phát triển kỹ năng lập luận và giao tiếp: học sinh học cách phân tích và trình bày ý kiến rõ ràng, logic, biết lắng nghe và phản hồi có căn cứ
+<br>-     Làm chủ tri thức và tự tin hội nhập: Học sinh có khả năng phân tích và đánh giá vấn đề độc lập sẽ dễ dàng thích nghi với môi trường học tập và làm việc trong tương lai, đặc biệt trong bối cảnh xã hội đổi mới và toàn cầu hóa.
+<br>- 	Khi đã có thói quen phản biện và tự phân tích, học sinh dễ dàng tiếp tục học tập, nghiên cứu và phát triển kỹ năng sau khi rời ghế nhà trường.
+        </p>
+      </div>  
+    </section>
+
+    <section id="Survey" class="page1">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdogBHQhyx-oH0G8Feo8ZcO9QeJXZEUvM3cBPJhEBmjwo6QFQ/viewform?embedded=true" 
+              style="width:100%; height:80vh; border: None">
+      Đang tải…
+      </iframe>
+    </section>
+
+  </main>
+
+  <script src="script2.js"></script>
+</body>
+</html>

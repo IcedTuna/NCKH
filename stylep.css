@@ -1,0 +1,112 @@
+
+@font-face {
+    font-family: 'Bungee Regular';
+    src: url('Bungee-Regular.ttf') format('truetype');
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #8b93ed;
+
+;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+  padding: 0rem;
+  background: #3c4678;  
+  justify-content: space-between; 
+  align-items: center;
+  position: relative; /* Tạo stacking context */
+  z-index: 100;
+}
+
+nav button {
+  font-family: 'Bungee Regular';
+  color: #FFFFFF;
+  background: None;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+main {
+  padding: 2rem;
+}
+
+.page1 {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.page1.active {
+  display: flex;
+  opacity: 1;
+}
+.button1 {
+  font-family: 'Bungee Regular';
+  font-size: 1.1rem;
+}
+.button1.active {
+  text-decoration: underline;
+}
+.page2 {
+  width: 60%;       /* chiều rộng khung */
+  height: 70vh;      /* chiều cao khung */
+  background: #e5eaff;/* màu nền nhạt giống hình */
+  border-radius: 10px;
+  padding: 0.5rem 1.5rem;
+  margin-left: 30%;
+  margin-right:5%;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  position: relative;
+  box-shadow: 10px 10px 0px rgb(108, 108, 108);
+}
+.page2.active {
+  display: flex;
+  opacity: 1;
+  font-size: 1.25rem;
+  overflow-y: auto;
+}
+
+
+.page2::-webkit-scrollbar {
+    width: 10px; /* Chiều rộng thanh cuộn dọc */
+    height: 100%; /* Chiều cao thanh cuộn ngang (nếu có) */
+}
+.page2::-webkit-scrollbar-track {
+    /* Đặt màu nền của thanh cuộn thành màu khớp với .page2 (xanh nhạt) */
+    background: transparent; 
+    /* Hoặc đặt thành transparent nếu bạn muốn thấy nền của phần tử cha (KHÔNG NÊN LÀM) */
+}
+.page2::-webkit-scrollbar-thumb {
+    background-color: #999; 
+    border-radius: 5px;
+    border: 2px solid #e5eaff; /* Cần thiết để tạo khoảng cách giữa thanh trượt và track */
+}
+.button2 {
+  font-family: 'Bungee Regular';
+  color: #898AC4;
+  background: #e5eaff;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+  height: 3.5rem;
+  border-radius: 15px;
+}
+.button2.active {
+  color: #e5eaff;
+  background: #50589c;
+}
+
+#flipImage {
+    margin:auto;
+    max-width: 100%; 
+    max-height: 100%;
+    object-fit:contain; 
+    height: 75vh;
+}

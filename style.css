@@ -1,0 +1,119 @@
+
+@font-face {
+    font-family: 'Bungee Regular';
+    src: url('Bungee-Regular.ttf') format('truetype');
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #8b93ed;
+}
+
+
+main {
+  padding: 2rem;
+}
+
+.page1 {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.page1.active {
+  display: flex;
+  opacity: 1;
+}
+.page2 {
+  box-sizing: border-box;
+  width: 100%;    /* chiều rộng khung */
+  height: 70vh;      /* chiều cao khung */
+  background: #e5eaff;/* màu nền nhạt giống hình */
+  border-radius: 10px;
+  padding: 0.5rem 1.5rem;
+  margin-left: 0%;
+  margin-right:0%;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  box-shadow: 10px 10px 0px rgb(108, 108, 108);
+}
+.page2.active {
+  display: flex;
+  opacity: 1;
+  font-size: 0.75rem;
+  overflow-y: auto;
+}
+.page2::-webkit-scrollbar {
+    width: 10px; /* Chiều rộng thanh cuộn dọc */
+    height: 100%; /* Chiều cao thanh cuộn ngang (nếu có) */
+}
+.page2::-webkit-scrollbar-track {
+    /* Đặt màu nền của thanh cuộn thành màu khớp với .page2 (xanh nhạt) */
+    background: transparent; 
+    /* Hoặc đặt thành transparent nếu bạn muốn thấy nền của phần tử cha (KHÔNG NÊN LÀM) */
+}
+.page2::-webkit-scrollbar-thumb {
+    background-color: #999; 
+    border-radius: 5px;
+    border: 2px solid #e5eaff; /* Cần thiết để tạo khoảng cách giữa thanh trượt và track */
+}
+.button2 {
+  font-family: 'Bungee Regular';
+  color: #898AC4;
+  background: none;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+  height: 3rem;
+  border-radius: 15px;
+  font-size: 0.7rem;
+}
+.button2.active {
+  color: #e5eaff;
+  background: #50589c;
+}
+
+#flipImage {
+    margin:auto;
+    max-width: 100%; 
+    max-height: 100%;
+    object-fit:contain; 
+    height: 30vh;
+}
+
+
+.menub {
+  width:2rem; 
+  height:2rem; 
+  color:white; 
+  background-color: #3c4678; 
+  border: None; 
+  border-radius: 5px; 
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+#menu {
+  position: fixed; 
+  display: none;
+  gap:10px;
+  left: 0; 
+  flex-direction: column;
+  background-color: #3c4678;
+  padding : 0rem;
+  width: 7rem;
+  top: 0;
+  z-index: 50;
+  height: 100%
+}
+.button3 {
+  font-family: 'Bungee Regular';
+  font-size: 0.8rem;
+  background:None;
+  border: None;
+  color:#8b93ed;
+  cursor: pointer;
+}
+.button3.active {
+  text-decoration: underline;
+}
