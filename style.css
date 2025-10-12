@@ -27,7 +27,7 @@ main {
 .page2 {
   box-sizing: border-box;
   width: 100%;    /* chiều rộng khung */
-  height: 70vh;      /* chiều cao khung */
+  height: 50vh;      /* chiều cao khung */
   background: #e5eaff;/* màu nền nhạt giống hình */
   border-radius: 10px;
   padding: 0.5rem 1.5rem;
@@ -67,7 +67,7 @@ main {
   cursor: pointer;
   height: 3rem;
   border-radius: 15px;
-  font-size: 1.25rem;
+  font-size: 2.5rem;
 }
 .button2.active {
   color: #e5eaff;
@@ -84,13 +84,13 @@ main {
 
 
 .menub {
-  width:5rem; 
-  height:5rem; 
+  width:7rem; 
+  height:77rem; 
   color:white; 
   background-color: #3c4678; 
   border: None; 
   border-radius: 5px; 
-  font-size: 3rem;
+  font-size: 5rem;
   cursor: pointer;
 }
 #menu {
@@ -101,14 +101,14 @@ main {
   flex-direction: column;
   background-color: #3c4678;
   padding : 0rem;
-  width: 10rem;
+  width: 20rem;
   top: 0;
   z-index: 50;
   height: 100%
 }
 .button3 {
   font-family: 'Bungee Regular';
-  font-size: 1.55rem;
+  font-size: 3rem;
   background:None;
   border: None;
   color:#8b93ed;
@@ -117,4 +117,5 @@ main {
 .button3.active {
   text-decoration: underline;
 }
+
 
