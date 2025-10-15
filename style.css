@@ -92,16 +92,17 @@ main {
   border-radius: 5px; 
   font-size: 5rem;
   cursor: pointer;
+  pading: 0rem;
 }
 #menu {
   position: fixed; 
   display: none;
-  gap:10px;
+  gap:15px;
   left: 0; 
   flex-direction: column;
   background-color: #3c4678;
   padding : 0rem;
-  width: 22rem;
+  width: 25rem;
   top: 0;
   z-index: 50;
   height: 100%
@@ -117,6 +118,7 @@ main {
 .button3.active {
   text-decoration: underline;
 }
+
 
 
 
