@@ -7,10 +7,10 @@ body {
   margin: 0;
   padding: 0;
   background: #8b93ed;
-
-;
 }
-
+p {
+  color: #3c4678;
+}
 nav {
   display: flex;
   gap: 10px;
@@ -110,3 +110,4 @@ main {
     object-fit:contain; 
     height: 75vh;
 }
+
