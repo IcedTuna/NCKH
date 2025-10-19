@@ -97,7 +97,7 @@ main {
 #menu {
   position: fixed; 
   display: none;
-  gap:15px;
+  gap:20px;
   left: 0; 
   flex-direction: column;
   background-color: #3c4678;
@@ -118,6 +118,7 @@ main {
 .button3.active {
   text-decoration: underline;
 }
+
 
 
 
